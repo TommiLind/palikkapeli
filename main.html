@@ -13,34 +13,76 @@
 
 <div class="container">
   <h2>Mökkimölkky</h2>
-  <p>Päivä:</p>            
+  <p id="date"></p>            
   <table id="mainTable" class="table table-bordered">
     <thead>
       <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
+        <th id="name" contenteditable="true">Nimi</th>
+        <th id="name" contenteditable="true">Nimi</th>
+        <th id="name" contenteditable="true">Nimi</th>
+        <th id="name" contenteditable="true">Nimi</th>
+        <th id="name" contenteditable="true">Nimi</th>
+        <th id="name" contenteditable="true">Nimi</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <td id="row1_1" contenteditable="true">0</td>
+        <td id="row1_2" contenteditable="true">0</td>
+        <td id="row1_3" contenteditable="true">0</td>
+        <td id="row1_4" contenteditable="true">0</td>
+        <td id="row1_5" contenteditable="true">0</td>
+        <td id="row1_6" contenteditable="true">0</td>
       </tr>
       <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
+        <td id="row2_1" contenteditable="true">0</td>
+        <td id="row2_2" contenteditable="true">0</td>
+        <td id="row2_3" contenteditable="true">0</td>
+        <td id="row2_4" contenteditable="true">0</td>
+        <td id="row2_5" contenteditable="true">0</td>
+        <td id="row2_6" contenteditable="true">0</td>
+      </tr>
+        <tr>
+        <td id="row3_1" contenteditable="true">0</td>
+        <td id="row3_2" contenteditable="true">0</td>
+        <td id="row3_3" contenteditable="true">0</td>
+        <td id="row3_4" contenteditable="true">0</td>
+        <td id="row3_5" contenteditable="true">0</td>
+        <td id="row3_6" contenteditable="true">0</td>
+      </tr>
+        <tr>
+        <td id="row4_1" contenteditable="true">0</td>
+        <td id="row4_2" contenteditable="true">0</td>
+        <td id="row4_3" contenteditable="true">0</td>
+        <td id="row4_4" contenteditable="true">0</td>
+        <td id="row4_5" contenteditable="true">0</td>
+        <td id="row4_6" contenteditable="true">0</td>
+      </tr>
+        <tr>
+        <td id="row5_1" contenteditable="true">0</td>
+        <td id="row5_2" contenteditable="true">0</td>
+        <td id="row5_3" contenteditable="true">0</td>
+        <td id="row5_4" contenteditable="true">0</td>
+        <td id="row5_5" contenteditable="true">0</td>
+        <td id="row5_6" contenteditable="true">0</td>
       </tr>
       <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
+        <td id="result1">Yht:</td>
+        <td id="result2">Yht:</td>
+        <td id="result3">Yht:</td>
+        <td id="result4">Yht:</td>
+        <td id="result5">Yht:</td>
+        <td id="result6">Yht:</td>
       </tr>
     </tbody>
   </table>
 </div>
+<p id="warn"></p>
+
+<script>
+var d = new Date();
+document.getElementById("date").innerHTML = "Pelipäivä: " + d;
+</script>
 
 </body>
 </html>
