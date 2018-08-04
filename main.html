@@ -80,8 +80,22 @@
 <p id="warn"></p>
 
 <script>
-var d = new Date();
-document.getElementById("date").innerHTML = "Pelipäivä: " + d;
+// Show date
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1;
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd = '0'+dd
+} 
+
+if(mm<10) {
+    mm = '0'+mm
+} 
+
+today = "Pelipäivä: " + dd + '/' + mm + '/' + yyyy;
+document.getElementById("date").innerHTML = today;
 </script>
 
 </body>
